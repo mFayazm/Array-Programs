@@ -1,0 +1,23 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int[] a = {10,11,121,23,50,47,30,7,4};
+        
+        int evencount = 0;
+        int oddcount = 0;
+        
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]%2==0)
+            {
+                evencount++;
+            }
+            else{
+                oddcount++;
+            }
+        }
+        System.out.println("Number of even numbers = " + evencount);
+        System.out.println("Number of odd numbers = " + oddcount);
+    }
+}
