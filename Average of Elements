@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        int[] a = new int[5];
+        int sum = 0;
+        double avg;
+        
+        System.out.println("Enter Elements:");
+        
+        for(int i=0;i<a.length;i++){
+            
+            a[i] = sc.nextInt();
+            sum += a[i];
+        }
+        avg = sum/a.length;
+        System.out.println("Average of elements=" + avg);
+    }
+} 
