@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter number of Elemnets: ");
+        int n = sc.nextInt();
+        
+        int[] original = new int[n];
+        int[] copy = new int[n];
+        
+        System.out.println("Enter " + n + " values: ");
+        for(int i=0; i<n; i++){
+            original[i] = sc.nextInt();
+        }
+        
+        for(int i=0; i<n; i++){
+            copy[i] = original[i];
+        }    
+        System.out.println("Copied Array: " + Arrays.toString(copy));
+    }
+}
