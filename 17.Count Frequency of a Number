@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        int[] arr = {5,4,2,11,2,3,3,4,1,3,4,11,13,11,5,63,25,8,65,75,35,45,56,27,43,5,78,64};
+        
+        System.out.println("Enter Target Element: ");
+        int target = sc.nextInt();
+        
+        int count = 0;
+        
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] == target){
+                count++;
+            }
+        }
+        System.out.println("Frequency of " + target + " is: " + count);
+    }    
+}
